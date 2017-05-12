@@ -1,12 +1,11 @@
 import json
 
-fo = open('french.json', 'r')
-fw = open('french.txt', 'a')
+fo = open('ahok (11-05-2017 pkl 11_35 - 17_36).json', 'r')
+fw = open('ahok.tweets', 'a')
 
 for line in fo:
 	try:
 		tweet = json.loads(line)
-		if not tweet['retweeted'] and 'RT @' not in tweet['text']:
-			fw.write(tweet['text']+"\n")
+		fw.write(tweet['text']+"\n")
 	except:
 		continue

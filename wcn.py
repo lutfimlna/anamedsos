@@ -34,7 +34,7 @@ def tokenizer(sentence):
         if word: tokens.append(word)
     return tokens
 
-stpWordSet = loadTwitterStp('twitter_stp.dic')
+stpWordSet = loadTwitterStp('StopWordEnglish.dic')
 
 
 def defaultFilterFunc(w):
@@ -92,5 +92,5 @@ def createEdgeAndNodeList(frequent_tuples, prefixOutFileName):
         i += 1
 
 #Co-occurence minimal '40' maksimal '200'
-createEdgeAndNodeList(scanTweets("part.tweets", 40, 200), "wan")
+createEdgeAndNodeList(scanTweets("ahok.tweets", 40, 200), "wan")
 
