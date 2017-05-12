@@ -35,6 +35,7 @@ def tokenizer(sentence):
     return tokens
 
 stpWordSet = loadTwitterStp('StopWordEnglish.dic')
+print (stpWordSet)
 
 
 def defaultFilterFunc(w):
